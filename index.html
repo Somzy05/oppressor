@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anime</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }        
+        
+        .box{
+            width: 100%;
+            height: 600px;
+            background-image: url(pic1.jpg);
+            position: relative;
+            color: white;
+            overflow-y: hidden;
+            animation-name: cool;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        .in1, .in2, .in3{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            text-align: center;
+            margin: auto;
+            transform: translatey(300%);
+            font-size: 35px;
+            height: 150px;
+           
+        }
+        button{
+            background-color: blue;
+            border-radius: 15px;
+            color: white;
+            padding: 10px;
+        }
+        @keyframes cool{
+            0%{
+
+                background-image: url(pic1.jpg); 
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            60%{
+                background-image: url(pic2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            90%{
+                background-image: url(pic3.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        .in1{
+            animation-name: one;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        .in2{
+            animation-name: two;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        .in3{
+            animation-name: three;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes one{
+            0%{
+                transform: translateY(0%);
+            }
+            20%{
+                transform: translateY(0%);
+            }
+            30%{
+                transform: translateY(300%);
+            }
+            40%{
+                transform: translateY(300%);
+            }
+            50%{
+                transform: translateY(300%);
+            }
+            60%{
+                transform: translateY(300%);
+            }
+            70%{
+                transform: translateY(300%);
+            }
+            80%{
+                transform: translateY(300%);
+            }
+            90%{
+                transform: translateY(300%);
+            }
+            100%{
+                transform: translateY(0%);
+            }
+
+        }
+        @keyframes two{
+            0%{
+                transform: translateY(300%);
+            }
+            20%{
+                transform: translateY(300%);
+            }
+            30%{
+                transform: translateY(300%);
+            }
+            40%{
+               transform: translateY(0%);
+            }
+            50%{
+                transform: translateY(0%);
+            }
+            60%{
+                transform: translateY(300%);
+            }
+        }
+        @keyframes three{
+            0%{
+                transform: translateY(300%);
+            }
+            20%{
+                transform: translateY(300%);
+            }
+            30%{
+                transform: translateY(300%);
+            }
+            40%{
+                transform: translateY(300%);
+            }
+            50%{
+                transform: translateY(300%);
+            }
+            60%{
+                transform: translateY(300%);
+            }
+            70%{
+                transform: translateY(0%);
+            }
+            80%{
+                transform: translateY(0%);
+            }
+            90%{
+                transform: translateY(300%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       
+    <div class="in1">
+        <p>Welcome to my page</p>
+        <button>GET STARTED</button>
+    </div>
+    <div class="in2"><p>Only those who applies the <br> principles of Web Design are true <br> Designers</p>
+         <button>GET STARTED</button>
+        </div>
+    <div class="in3">
+        <p>A trail will convince you</p>
+        <button>GET STARTED</button>
+    </div>
+    </div>
+</body>
+</html>
